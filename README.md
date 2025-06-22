@@ -1,1 +1,1 @@
-# the.codec
+# theCodec
