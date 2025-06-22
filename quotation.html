@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The.Codec | Get Quotation</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/designforge-portfolio/assets/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The.Codec | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
 
   <body>
     <nav class="navbar">
       <div class="logo">
         <img
-          src="/designforge-portfolio/assets/thecodec-logo.png"
+          src="assets/thecodec-logo.png"
           alt="The.CodeC Logo"
         />
       </div>
@@ -50,127 +44,114 @@
 
     <section class="quote-form">
       <h2>Request a Quotation</h2>
-      <form id="quoteForm">
-        <label for="name">Full Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your name"
-          required
-        />
+      <form action="https://formspree.io/f/xgvyljjb" method="POST" class="quote-form">
+  <input type="hidden" name="_next" value="thank-you.html" />
+  <input type="hidden" name="_subject" value="New Quotation Request from The.Codec" />
 
-        <label for="email">Email Address</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="you@example.com"
-          required
-        />
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name" required />
 
-        <label for="service">Service Required</label>
-        <select id="service" name="service" required>
-          <option value="">-- Select a service --</option>
-          <option value="branding">Brand Identity</option>
-          <option value="design">Graphic Design</option>
-          <option value="development">Web Development</option>
-          <option value="video">Video Editing</option>
-          <option value="marketing">Social Marketing</option>
-        </select>
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
-        <label for="details">Project Details</label>
-        <textarea
-          id="details"
-          name="details"
-          placeholder="Tell us about your project..."
-          required
-        ></textarea>
+  <label for="service">Service Required</label>
+  <select id="service" name="service" required>
+    <option value="">-- Select a service --</option>
+    <option value="branding">Brand Identity</option>
+    <option value="design">Graphic Design</option>
+    <option value="development">Web Development</option>
+    <option value="video">Video Editing</option>
+    <option value="marketing">Social Marketing</option>
+  </select>
 
-        <button type="submit" class="btn">Get Quote</button>
-      </form>
+  <label for="details">Project Details</label>
+  <textarea
+    id="details"
+    name="message"
+    placeholder="Tell us about your project..."
+    required
+  ></textarea>
+
+  <button type="submit" class="btn">Get Quote</button>
+</form>
+
     </section>
     <br /><br /><br />
 
-    <!-- ===== Footer ===== -->
-    <footer class="footer-section">
-      <div class="footer-row">
-        <!-- Left Side -->
-        <div class="footer-left">
-          <div class="footer-logo">
-            <div class="logo">
-              <img
-                src="/designforge-portfolio/assets/thecodec-logo.png"
-                alt="The.CodeC Logo"
-              />
-            </div>
-            <div class="footer-social-icon">
-              <a href="https://www.facebook.com/The.Codec.25/" target="_blank"
-                ><i class="fab fa-facebook-square"></i
-              ></a>
-              <a href="https://www.instagram.com/the.codec/#" target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/company/the-codec/?viewAsMember=true"
-                target="_blank"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-
-            <div class="footer-widget">
-              <h3>Useful Links</h3>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li>
-                  <a href="/designforge-portfolio/projects.html">Projects</a>
-                </li>
-                <li><a href="/designforge-portfolio/upload.html">Upload</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-              </ul>
-            </div>
+    <!-- ====== FINAL FOOTER ====== -->
+  <footer class="footer-section">
+    <div class="footer-row">
+      <!-- Left Side -->
+      <div class="footer-left">
+        <div class="footer-logo">
+          <div class="logo">
+            <img src="assets/thecodec-logo.png" alt="The.CodeC Logo" />
           </div>
-        </div>
-
-        <!-- Right Side -->
-        <div class="footer-right">
-          <div class="contact-card">
-            <h4>Find us</h4>
-            <p>Dhunaraplot Benachity,<br />Durgapur -13, West Bengal, 713213</p>
-            <h4>Call us</h4>
-            <p>+91 6296035805 / 6204432753</p>
-            <h4>Mail us</h4>
-            <p>contactcodec.co@gmail.com</p>
+          <div class="footer-social-icon">
+            <a href="https://www.facebook.com/The.Codec.25/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/the.codec/#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/the-codec/?viewAsMember=true" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
           </div>
 
           <div class="footer-widget">
-            <h3>Subscribe</h3>
-            <p>Don’t miss updates from The.Codec! Enter your email below.</p>
-            <form>
-              <input type="text" placeholder="Email Address" />
-              <button type="submit"><i class="fas fa-paper-plane"></i></button>
-            </form>
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>
+               <a href="https://drive.google.com/drive/folders/1R0XGLeOGzv82h7eTia0Yeu83L9EDt4aj?usp=drive_link"
+          target="_blank" class="btn">Explore Our Works</a>
+              </li>
+              <li>
+        <a href="quotation.html" class="btn">Get Quotation</a>
+              </li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- Copyright -->
-      <div class="copyright-area">
-        <div class="copyright-content">
-          <p>
-            © 2025 The.Codec. All rights reserved. Crafted with ❤️ by Subham &
-            Komal.
-          </p>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <!-- Right Side: Contact & Subscribe -->
+      <div class="footer-right">
+        <div class="contact-card">
+          <h4>Find us</h4>
+          <p>Dhunaraplot Benachity,<br />Durgapur -13, West Bengal, 713213</p>
+          <h4>Call us</h4>
+          <p>+91 6296035805 / 6204432753</p>
+          <h4>Mail us</h4>
+          <p>contactcodec.co@gmail.com</p>
+        </div>
+
+        <div class="footer-widget">
+          <h3>Subscribe</h3>
+          <p>Don’t miss updates from The.Codec! Enter your email below.</p>
+          <form>
+            <input type="text" placeholder="Email Address" />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright-area">
+      <div class="copyright-content">
+        <p>
+          © 2025 The.Codec. All rights reserved. Crafted with ❤️ by Subham &
+          Komal.
+        </p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="terms&condition.html">Terms</a>
+          </li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
     <script src="/designforge-portfolio/js/main.js"></script>
 
