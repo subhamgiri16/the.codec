@@ -85,9 +85,6 @@ Open `index.html` in any browser (use Live Server in VS Code for best results).
 
 **Location:** Durgapur -13, West Bengal, India  
 **Email:** contactcodec.co@gmail.com  
-**WhatsApp Contacts:**  
-- 📱 +91 6296035805 (Subham)  
-- 📱 +91 6204432753 (Komal)
 
 ---
 
